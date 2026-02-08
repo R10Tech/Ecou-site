@@ -13,7 +13,7 @@
   --color-surface: var(--t-surface);
 
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-heading: "Bison Bold", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
 
@@ -42,17 +42,6 @@
   --t-dark-lighter: #2A2A2A;
   --t-muted: #7A7A75;
   --t-surface: #E4E4E0;
-}
-
-/* Bison Bold — drop font files in public/fonts/ */
-@font-face {
-  font-family: "Bison Bold";
-  src: url("/fonts/Bison-Bold.woff2") format("woff2"),
-       url("/fonts/Bison-Bold.woff") format("woff"),
-       url("/fonts/Bison-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
 }
 
 html {

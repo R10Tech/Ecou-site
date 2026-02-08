@@ -7,7 +7,7 @@ import { useTheme } from "@/lib/ThemeContext";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const { user } = useAuth();
+  const { user, isAdmin } = useAuth();
   const { theme, toggleTheme } = useTheme();
 
   return (
@@ -47,6 +47,13 @@ export default function Header() {
               </svg>
             )}
           </button>
+
+          {/* Admin link */}
+          {isAdmin && (
+            <Link href="/admin" className="text-[11px] uppercase tracking-[0.15em] text-muted hover:text-text transition-colors">
+              Admin
+            </Link>
+          )}
 
           {/* Auth link */}
           {user ? (
@@ -100,6 +107,11 @@ export default function Header() {
           >
             {theme === "dark" ? "Light Mode" : "Dark Mode"}
           </button>
+          {isAdmin && (
+            <Link href="/admin" className="text-[11px] uppercase tracking-[0.15em] text-muted" onClick={() => setMenuOpen(false)}>
+              Admin
+            </Link>
+          )}
           {user ? (
             <Link
               href="/account"

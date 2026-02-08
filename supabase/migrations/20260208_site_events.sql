@@ -1,3 +1,6 @@
+-- Add role column to profiles (if not exists)
+alter table profiles add column if not exists role text default 'user';
+
 -- Site analytics events table
 create table if not exists site_events (
   id bigint generated always as identity primary key,
