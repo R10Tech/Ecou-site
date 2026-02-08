@@ -1,0 +1,168 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of Service — Ecou",
+  description: "Ecou terms of service. Usage terms, subscription policies, and legal information.",
+};
+
+export default function Terms() {
+  return (
+    <section className="pt-32 pb-20 md:pt-40 md:pb-28">
+      <div className="max-w-[800px] mx-auto px-6">
+        <h1 className="font-heading text-4xl md:text-5xl">Terms of Service</h1>
+        <p className="text-sm text-muted mt-2">Last updated: February 2026</p>
+
+        <div className="mt-12 space-y-10 text-sm leading-relaxed text-text/80">
+          <div>
+            <h2 className="font-medium text-base text-text mb-3">1. Acceptance of Terms</h2>
+            <p>
+              By downloading, installing, or using Ecou (&quot;the Software&quot;), you agree to be
+              bound by these Terms of Service (&quot;Terms&quot;). If you do not agree to these
+              Terms, do not use the Software.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-medium text-base text-text mb-3">2. Description of Service</h2>
+            <p>
+              Ecou is a desktop application that provides voice-to-text transcription using a local
+              AI model. The Software processes audio on your device and injects transcribed text into
+              your active applications.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-medium text-base text-text mb-3">3. Account Registration</h2>
+            <p>
+              To use Ecou, you must create an account using a valid email address. You are
+              responsible for maintaining the security of your account and for all activity that
+              occurs under your account.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-medium text-base text-text mb-3">4. Free Trial</h2>
+            <p>
+              Ecou offers a free trial of 15 minutes of total transcription time. The trial is
+              limited to one per user. Once the trial limit is reached, you must subscribe to a paid
+              plan to continue using the transcription features.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-medium text-base text-text mb-3">5. Subscription Plans & Billing</h2>
+            <p>Ecou offers the following paid plans:</p>
+            <ul className="list-disc pl-5 space-y-1.5 mt-3">
+              <li>
+                <strong>Basic ($0.99/month)</strong> — 30 minutes of transcription per day. Daily
+                limit resets at midnight UTC.
+              </li>
+              <li>
+                <strong>Pro ($15/month)</strong> — Unlimited transcription.
+              </li>
+              <li>
+                <strong>Lifetime ($100 one-time)</strong> — Unlimited transcription forever,
+                including all future updates.
+              </li>
+            </ul>
+            <p className="mt-3">
+              Subscriptions are billed through Stripe. Monthly plans automatically renew unless
+              cancelled. You can cancel your subscription at any time through your Stripe billing
+              portal. Cancellation takes effect at the end of the current billing period.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-medium text-base text-text mb-3">6. Refund Policy</h2>
+            <p>
+              Monthly subscriptions (Basic and Pro) may be refunded within 7 days of the initial
+              purchase if you have not exceeded significant usage. Lifetime purchases may be refunded
+              within 14 days of purchase. To request a refund, contact{" "}
+              <a href="mailto:support@ecou.io" className="text-accent hover:underline">
+                support@ecou.io
+              </a>
+              .
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-medium text-base text-text mb-3">7. Acceptable Use</h2>
+            <p>You agree not to:</p>
+            <ul className="list-disc pl-5 space-y-1.5 mt-3">
+              <li>Reverse engineer, decompile, or disassemble the Software</li>
+              <li>Circumvent usage limits, trial restrictions, or licensing mechanisms</li>
+              <li>Share your account credentials with others</li>
+              <li>Use the Software for any unlawful purpose</li>
+              <li>
+                Redistribute, resell, or sublicense the Software without written permission
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="font-medium text-base text-text mb-3">8. Intellectual Property</h2>
+            <p>
+              Ecou and all associated intellectual property (including the Software, branding, and
+              website) are owned by the Ecou team. You are granted a limited, non-exclusive,
+              non-transferable license to use the Software in accordance with these Terms.
+            </p>
+            <p className="mt-3">
+              The transcription output generated by the Software belongs to you. We claim no
+              ownership over the text produced from your voice.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-medium text-base text-text mb-3">9. Disclaimer of Warranties</h2>
+            <p>
+              The Software is provided &quot;as is&quot; and &quot;as available&quot; without
+              warranties of any kind, either express or implied. We do not guarantee that the
+              Software will be error-free, uninterrupted, or that transcription will be 100%
+              accurate.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-medium text-base text-text mb-3">10. Limitation of Liability</h2>
+            <p>
+              To the maximum extent permitted by applicable law, Ecou and its creators shall not be
+              liable for any indirect, incidental, special, consequential, or punitive damages, or
+              any loss of profits or revenue, whether incurred directly or indirectly, or any loss of
+              data, use, goodwill, or other intangible losses resulting from your use of the
+              Software.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-medium text-base text-text mb-3">11. Termination</h2>
+            <p>
+              We reserve the right to suspend or terminate your account if you violate these Terms.
+              You may terminate your account at any time by contacting support. Upon termination,
+              your right to use the Software ceases immediately.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-medium text-base text-text mb-3">12. Changes to Terms</h2>
+            <p>
+              We may update these Terms from time to time. We will notify users of significant
+              changes via the application or email. Continued use of Ecou after changes constitutes
+              acceptance of the updated Terms.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-medium text-base text-text mb-3">13. Contact</h2>
+            <p>
+              For questions about these Terms, contact us at{" "}
+              <a href="mailto:support@ecou.io" className="text-accent hover:underline">
+                support@ecou.io
+              </a>
+              .
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  /* Default tokens — overridden by data-theme via CSS vars */
+  --color-bg: var(--t-bg);
+  --color-text: var(--t-text);
+  --color-accent: var(--t-accent);
+  --color-accent-hover: var(--t-accent-hover);
+  --color-border: var(--t-border);
+  --color-dark: var(--t-dark);
+  --color-dark-lighter: var(--t-dark-lighter);
+  --color-muted: var(--t-muted);
+  --color-surface: var(--t-surface);
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Bison Bold", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+/* ── Dark theme (default) ── */
+:root,
+[data-theme="dark"] {
+  --t-bg: #0A0A0A;
+  --t-text: #E8E8E8;
+  --t-accent: #A52222;
+  --t-accent-hover: #8B1A1A;
+  --t-border: #1F1F1F;
+  --t-dark: #050505;
+  --t-dark-lighter: #111111;
+  --t-muted: #5A5A5A;
+  --t-surface: #121212;
+}
+
+/* ── Light theme ── */
+[data-theme="light"] {
+  --t-bg: #F0F0EC;
+  --t-text: #1A1A1A;
+  --t-accent: #A52222;
+  --t-accent-hover: #8B1A1A;
+  --t-border: #D4D4CF;
+  --t-dark: #1A1A1A;
+  --t-dark-lighter: #2A2A2A;
+  --t-muted: #7A7A75;
+  --t-surface: #E4E4E0;
+}
+
+/* Bison Bold — drop font files in public/fonts/ */
+@font-face {
+  font-family: "Bison Bold";
+  src: url("/fonts/Bison-Bold.woff2") format("woff2"),
+       url("/fonts/Bison-Bold.woff") format("woff"),
+       url("/fonts/Bison-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--t-bg);
+  color: var(--t-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--t-accent);
+  color: white;
+}
+
+/* Utility for vertical text */
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
