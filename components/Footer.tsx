@@ -42,12 +42,6 @@ export default function Footer() {
               </Link>
             </div>
 
-            <div className="flex flex-col gap-3">
-              <span className="font-mono text-[10px] text-muted uppercase tracking-[0.15em]">Support</span>
-              <a href="mailto:support@ecou.io" className="text-xs text-text/60 hover:text-text transition-colors">
-                Contact
-              </a>
-            </div>
           </div>
         </div>
 

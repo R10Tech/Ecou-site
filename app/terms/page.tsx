@@ -77,11 +77,7 @@ export default function Terms() {
             <p>
               Monthly subscriptions (Basic and Pro) may be refunded within 7 days of the initial
               purchase if you have not exceeded significant usage. Lifetime purchases may be refunded
-              within 14 days of purchase. To request a refund, contact{" "}
-              <a href="mailto:support@ecou.io" className="text-accent hover:underline">
-                support@ecou.io
-              </a>
-              .
+              within 14 days of purchase. To request a refund, contact us through our website.
             </p>
           </div>
 
@@ -154,11 +150,7 @@ export default function Terms() {
           <div>
             <h2 className="font-medium text-base text-text mb-3">13. Contact</h2>
             <p>
-              For questions about these Terms, contact us at{" "}
-              <a href="mailto:support@ecou.io" className="text-accent hover:underline">
-                support@ecou.io
-              </a>
-              .
+              For questions about these Terms, contact us through our website.
             </p>
           </div>
         </div>

@@ -143,11 +143,7 @@ export default function Privacy() {
           <div>
             <h2 className="font-medium text-base text-text mb-3">Contact</h2>
             <p>
-              If you have questions about this privacy policy or your data, contact us at{" "}
-              <a href="mailto:support@ecou.io" className="text-accent hover:underline">
-                support@ecou.io
-              </a>
-              .
+              If you have questions about this privacy policy or your data, contact us through our website.
             </p>
           </div>
         </div>
